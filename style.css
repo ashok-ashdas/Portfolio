@@ -324,4 +324,127 @@ footer{
     color: white;
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+        padding: 1em 5%;
+    }
+
+    ul {
+        display: none; /* hide menu for mobile */
+    }
+
+    #menu {
+        display: block; /* show hamburger icon */
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 10% 5%;
+    }
+
+    /* HOME */
+    #home img {
+        width: 40vw;
+    }
+
+    .info-box h1 {
+        font-size: 2.5em;
+    }
+
+    .info-box h3 {
+        font-size: 1.5em;
+    }
+
+    /* BUTTONS STACK */
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ABOUT SECTION */
+    #about {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #about img {
+        width: 80%;
+    }
+
+    .about-box h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .about-box {
+        text-align: center;
+    }
+
+    /* SKILLS */
+    .skills {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    /* PROJECT HEADER */
+    .header {
+        font-size: 2.5em;
+    }
+
+    /* CONTACT */
+    #contact form {
+        width: 100%;
+    }
+
+    form input {
+        padding: 1em;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+        padding: 3em 5%;
+    }
+
+    .col-right .social-icons {
+        justify-content: center;
+    }
+}
+
+/* MOBILE MENU STYLE */
+@media (max-width: 768px) {
+
+    #menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: var(--second-background);
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 2em 0;
+        display: none;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
+
 
