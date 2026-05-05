@@ -337,7 +337,8 @@ footer{
     }
 
     #menu {
-        display: block; /* show hamburger icon */
+        display: block;
+        cursor: pointer; /* show hamburger icon */
     }
 
     /* SECTIONS */
@@ -419,7 +420,6 @@ footer{
     .col-right .social-icons {
         justify-content: center;
     }
-
 }
 
 /* MOBILE MENU STYLE */
@@ -430,22 +430,23 @@ footer{
         cursor: pointer;
     }
 
-    .links {
+    #nav-links {
         position: absolute;
         top: 100%;
-        left: 0;
+        right: 0;
         width: 100%;
         background: var(--second-background);
         flex-direction: column;
         align-items: center;
         gap: 2em;
         padding: 2em 0;
-        display: none !important;
+        display: none;
     }
 
-    .links.active {
-        display: flex !important;
+    #nav-links.active {
+        display: flex;
     }
 }
+
 
 
